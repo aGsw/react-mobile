@@ -1,0 +1,52 @@
+.container {
+    height: 100vh;
+    background: #f64026;
+
+    // 新人礼活动
+    .content {
+        position: relative;
+
+        img {
+            position: absolute;
+        }
+
+        .openImg {
+            margin-top: 95%;
+            margin-left: 35%;
+            width: 31%;
+        }
+
+        .useImg {
+            margin-top: 126%;
+            margin-left: 24%;
+            width: 52%;
+        }
+
+        // 活动规则
+        p {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            margin-top: 167%;
+            font-size: 15px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #eac99f
+        }
+    }
+    // APP 下载
+    .app {
+        position: relative;
+
+        img {
+            position: absolute;
+        }
+
+        :nth-child(2) {
+            margin-top: 125%;
+            margin-left: 20%;
+            width: 60%;
+        }
+    }
+}

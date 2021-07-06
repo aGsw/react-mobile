@@ -1,0 +1,11 @@
+body {
+   margin:0 auto !important; 
+   max-width: 450px;
+   height: 100vh;
+   ::-webkit-scrollbar {
+      display: none;
+    }
+}
+*{
+   box-sizing: border-box;
+}

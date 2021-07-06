@@ -1,0 +1,32 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .content{
+        flex:1;
+        background: white;
+        overflow: auto;
+    }
+    .tarBar{
+        height: 80px;
+        display: flex;
+        background: white;
+        border-top: 1px solid #cccccc;
+        .item{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #cccccc;
+            :nth-child(1){
+                width: 20px;
+                height: 20px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+}
+
