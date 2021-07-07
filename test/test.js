@@ -13,5 +13,6 @@ const hh = [{
 }]
 
 
-console.log(hh.splice(0,5))
+console.log(hh.slice(1,5))
+console.log(hh.slice(3,5))
 console.log(hh)

@@ -2,7 +2,6 @@ export default [
     {
         path: '/home',
         component: require('../pages/Home').default,
-        exact:true
+        exact:false
     },
-    ...require('./activity')
 ]
