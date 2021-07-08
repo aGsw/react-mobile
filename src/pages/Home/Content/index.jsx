@@ -19,6 +19,9 @@ const Index = () =>{
             < ReactCodeInput  type = {'password'} fields = { 6 }  inputMode={'numeric'}   / > 
             <div className={styles.tabs}>
                 <Tabs tabs={tabs2} initialPage={5} tabBarTextStyle={{with:'100px'}}/>
+                <ul>
+                    <li>1s</li>
+                </ul>
             </div>
         </div>
     )

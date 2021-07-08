@@ -4,7 +4,7 @@
     flex-direction: column;
     .tobBar{
         height: 50px;
-        background: #21c7ad;
+        background: rgb(254,194,44);
     }
     .content{
         flex:1;
@@ -14,7 +14,7 @@
     .tarBar{
         height: 80px;
         display: flex;
-        background: #21c7ad;
+        background:rgb(254,194,44);;
         border-top: 1px solid #cccccc;
         .item{
             flex: 1;

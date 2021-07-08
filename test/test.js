@@ -35,9 +35,10 @@
 
 
 
-var reg = /^[0-9]*$/
+// var reg = /^[0-9]*$/
 
 
-console.log(reg.test('12313A13'))
+// console.log(reg.test('12313A13'))
 
 
+1?console.log('对'):console.log('错')

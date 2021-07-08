@@ -2,7 +2,8 @@
     .tabs{
         :global{
             .am-tabs-default-bar-tab {
-                font-size: 13px;
+                font-size: 12px;
+                transform: scale(1);
             }
         } 
     }
