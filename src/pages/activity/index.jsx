@@ -13,7 +13,6 @@ const activitys = [
 const Activity = () =>{
     return (
         <div>
-            <p>活动</p>
             {
                 activitys.map((item,index)=>{
                     return(
