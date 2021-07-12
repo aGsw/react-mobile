@@ -1,6 +1,8 @@
 const Hyxj = () =>{
     return(
-        <div>哈银消金项目</div>
+        <div>
+            哈哈贷H5-APP重构
+        </div>
     )
 }
 

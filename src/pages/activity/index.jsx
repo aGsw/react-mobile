@@ -1,5 +1,7 @@
 
 import {Link} from 'react-router-dom'
+import { queryUserInfo } from '../../services/api'
+import { useEffect } from 'react'
 const activitys = [
     {
         name :'新人礼活动',
@@ -11,6 +13,11 @@ const activitys = [
 
 
 const Activity = () =>{
+
+    useEffect(async ()=>{
+        let res = await queryUserInfo()
+        console.log(res)
+    })
     return (
         <div>
             {
