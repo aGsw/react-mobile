@@ -6,6 +6,10 @@ const activitys = [
     {
         name :'新人礼活动',
         link:'/activity/newPeopleGift'
+    },
+    {
+        name :'关注微信',
+        link:'/activity/FollowWx'
     }
 ]
 
@@ -24,7 +28,9 @@ const Activity = () =>{
                 activitys.map((item,index)=>{
                     return(
                         <Link key={index} to={item.link}>
+                            <div>
                             {item.name}
+                            </div>
                         </Link>
                     )
                    
