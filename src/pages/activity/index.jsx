@@ -10,6 +10,10 @@ const activitys = [
     {
         name :'关注微信',
         link:'/activity/FollowWx'
+    },
+    {
+        name :'联系人信息',
+        link:'/activity/ContactInfo'
     }
 ]
 

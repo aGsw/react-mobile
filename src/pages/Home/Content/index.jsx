@@ -27,14 +27,15 @@ const Index = () =>{
     }
     return (
         <div className={styles.container}>
-            < ReactCodeInput  type = {'password'} fields = { 6 }  inputMode={'numeric'}  onChange={getValue} / > 
+            首页
+            {/* < ReactCodeInput  type = {'password'} fields = { 6 }  inputMode={'numeric'}  onChange={getValue} / > 
             <p>输入的值:{value}</p>
             <div className={styles.tabs}>
                 <Tabs tabs={tabs2} initialPage={5} tabBarTextStyle={{with:'100px'}}/>
                 <ul>
                     <li onClick={replace}>1s</li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     )
 }

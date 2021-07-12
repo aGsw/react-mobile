@@ -67,7 +67,6 @@ const Home = () =>{
                                     exact
                                     component={item.content}
                                >
-
                                </Route>
                            )
                        }) 
@@ -79,11 +78,11 @@ const Home = () =>{
                 {
                   tabs.map((item,index)=>{
                       return(
-                          <div key={index} className={styles.item}>
+                          <div key={index} className={styles.item} onClick={()=>{
+                            history.replace(`${path}${item.subPath}`)
+                        }}>
                               <div dangerouslySetInnerHTML={{__html: item.icon}}/>
-                              <div onClick={()=>{
-                                  history.replace(`${path}${item.subPath}`)
-                              }}>{item.name}</div>
+                              <div >{item.name}</div>
                           </div>
                       )
                   })  

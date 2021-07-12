@@ -9,5 +9,11 @@ module.exports = [
         path: '/activity/FollowWx',
         component: require('../pages/activity/FollowWx').default,
         exact:true
+    },
+    // 联系人信息
+    {
+        path: '/activity/ContactInfo',
+        component: require('../pages/activity/ContactInfo').default,
+        exact:true
     }
 ]
