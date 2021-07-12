@@ -1,8 +1,8 @@
-// import Header from 'components/hyxj/Header'
+import Header from 'components/hyxj/Header'
 const  ContactInfo = ()=>{
     return (
        <div>    
-           {/* <Header/> */}
+           <Header/>
        </div>
     )
 }
