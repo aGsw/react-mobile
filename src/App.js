@@ -2,17 +2,19 @@ import routers from './routers/index'
 
 
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Redirect,
   Route,
-  Switch
+  Switch,
+  Router
 } from 'react-router-dom'
+import history from './history'
 
 const App = () =>{
   return (
     <>
       {
-        <Router  basename={"/mobile"}>
+        <Router history={history}  basename={"/mobile"}>
           <Switch>
             {routers.map((route,i)=>{
               return (

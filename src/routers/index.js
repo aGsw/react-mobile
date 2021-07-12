@@ -4,4 +4,5 @@ export default [
         component: require('../pages/Home').default,
         exact:false
     },
+    ...require('./project')
 ]

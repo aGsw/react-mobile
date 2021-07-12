@@ -1,6 +1,9 @@
 import ReactCodeInput from 'react-code-input'
 import styles from './index.module.scss'
 import { Tabs } from 'antd-mobile';
+import { useState } from 'react';
+
+import { createBrowserHistory } from 'history';
 const tabs2 = [
     { title: '产品特点', sub: '1' },
     { title: '额度申请', sub: '2' },
@@ -14,13 +17,22 @@ const tabs2 = [
   ];
 
 const Index = () =>{
+    const history = createBrowserHistory({basename:'mobile'})
+    const [value,setValue] = useState(1)
+    const getValue = (val)=>{
+        setValue(val)
+    }
+    const replace = ()=>{
+        history.replace('/home/project')
+    }
     return (
         <div className={styles.container}>
-            < ReactCodeInput  type = {'password'} fields = { 6 }  inputMode={'numeric'}   / > 
+            < ReactCodeInput  type = {'password'} fields = { 6 }  inputMode={'numeric'}  onChange={getValue} / > 
+            <p>输入的值:{value}</p>
             <div className={styles.tabs}>
                 <Tabs tabs={tabs2} initialPage={5} tabBarTextStyle={{with:'100px'}}/>
                 <ul>
-                    <li>1s</li>
+                    <li onClick={replace}>1s</li>
                 </ul>
             </div>
         </div>
