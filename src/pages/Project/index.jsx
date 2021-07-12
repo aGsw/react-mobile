@@ -3,7 +3,7 @@ const Project = ()=>{
     const projects = [
         {
             name:'哈银消金APP-H5重构',
-            link:'project/hyxj'
+            link:'/project/hyxj'
         }
     ]
 
