@@ -3,6 +3,7 @@ import styles from './index.module.scss'
 import { Tabs } from 'antd-mobile';
 import { useState } from 'react';
 
+
 import { createBrowserHistory } from 'history';
 const tabs2 = [
     { title: '产品特点', sub: '1' },
@@ -16,7 +17,7 @@ const tabs2 = [
 
   ];
 
-const Index = () =>{
+const Index = (pwdValue) =>{
     const history = createBrowserHistory({basename:'mobile'})
     const [value,setValue] = useState(1)
     const getValue = (val)=>{
@@ -27,7 +28,6 @@ const Index = () =>{
     }
     return (
         <div className={styles.container}>
-            首页
             {/* < ReactCodeInput  type = {'password'} fields = { 6 }  inputMode={'numeric'}  onChange={getValue} / > 
             <p>输入的值:{value}</p>
             <div className={styles.tabs}>

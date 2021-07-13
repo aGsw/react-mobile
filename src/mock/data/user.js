@@ -12,7 +12,12 @@ const getUserInfo = (schema, request) =>{
     }
 }
 
-
+const test = (schema,request) =>{
+    return {
+        name:'xxxxx'
+    }
+}
 export default {
-    'POST /v1/user/generalInfo' : getUserInfo
+    'POST /v1/user/generalInfo' : getUserInfo,
+    'POST /v1/user/Test' : test
 }

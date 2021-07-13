@@ -1,3 +1,14 @@
+/**
+ * 工作原理：拦截应用程序的fetch 和 xmlHttpRequest 请求
+ * api      api集合
+ * apiModule 每一条api  key:fn
+ * method   : get/post
+ * path: /v1/user/Test
+ * requestMethod: get post 
+ * passthrough: 跳过这个
+ */
+
+
 import { createServer } from "miragejs"
 import api from './api'
 import _ from 'lodash'

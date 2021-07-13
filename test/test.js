@@ -41,4 +41,9 @@
 // console.log(reg.test('12313A13'))
 
 
-1?console.log('对'):console.log('错')
+// 1?console.log('对'):console.log('错')
+function test(str){
+    return (str+'').substring(0,3)+'****'+(str+'').substring(7,str.length)
+}
+
+console.log(test(17310241134))
