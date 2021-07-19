@@ -1,19 +1,25 @@
 .container{
     img{
-        width: 100%;
         display: block;
+        width: 100%;  
+    }
+    .sticky{
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0px;
+        margin-top: -30px;
+        padding-bottom:10px ;
+        background:white;
+        border: 1px solid #eee;
+        border-radius: 10px 10px 0px 0px;
     }
     :global{
-        .am-tabs {
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0px;
+        //  tab切换
+        .am-tabs-default-bar{
+            border-radius: 10px 10px 0px 0px;
+        }
+        .am-tabs-default-bar-top .am-tabs-default-bar-tab::after{
+            background-color: #ffffff !important;
         }
     }
 }
-
-
-
-// return (
-//                          
-//                      )
