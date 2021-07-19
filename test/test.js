@@ -42,8 +42,20 @@
 
 
 // 1?console.log('对'):console.log('错')
-function test(str){
-    return (str+'').substring(0,3)+'****'+(str+'').substring(7,str.length)
-}
+// function test(str){
+//     return (str+'').substring(0,3)+'****'+(str+'').substring(7,str.length)
+// }
 
-console.log(test(17310241134))
+// console.log(test(17310241134))
+
+// const obj = {
+//     name:'郭世伟',
+//     age:19
+// }
+
+// console.log('sex' in obj)
+// console.log('name' in obj)
+
+const supper = '5'
+
+console.log(supper.indexOf('4'))

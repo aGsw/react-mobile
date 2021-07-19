@@ -3,6 +3,10 @@ const lists = [
     {
         name:'我的银行卡',
         link:'/project/hyxj/bankCard'
+    },
+    {
+        name:'借还指南',
+        link:'/project/hyxj/loanReturnGuide'
     }
 ]
 const Hyxj = () =>{
