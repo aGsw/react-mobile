@@ -1,0 +1,24 @@
+.container img {
+  display: block;
+  width: 100%;
+}
+
+.container .sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  margin-top: -30px;
+  padding-bottom: 10px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.container :global .am-tabs-default-bar {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.container :global .am-tabs-default-bar-top .am-tabs-default-bar-tab::after {
+  background-color: #ffffff !important;
+}
+/*# sourceMappingURL=index.module.css.map */

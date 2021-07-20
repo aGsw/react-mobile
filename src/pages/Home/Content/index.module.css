@@ -1,0 +1,6 @@
+.container .tabs :global .am-tabs-default-bar-tab {
+  font-size: 12px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=index.module.css.map */

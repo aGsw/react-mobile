@@ -7,6 +7,10 @@ const lists = [
     {
         name:'借还指南',
         link:'/project/hyxj/loanReturnGuide'
+    },
+    {
+        name:'我的额度',
+        link:'/project/hyxj/quota'
     }
 ]
 const Hyxj = () =>{

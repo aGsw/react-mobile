@@ -1,0 +1,51 @@
+.container {
+  height: 100vh;
+  background: #f64026;
+}
+
+.container .content {
+  position: relative;
+}
+
+.container .content img {
+  position: absolute;
+}
+
+.container .content .openImg {
+  margin-top: 95%;
+  margin-left: 35%;
+  width: 31%;
+}
+
+.container .content .useImg {
+  margin-top: 126%;
+  margin-left: 24%;
+  width: 52%;
+}
+
+.container .content p {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  margin-top: 167%;
+  font-size: 15px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #eac99f;
+}
+
+.container .app {
+  position: relative;
+}
+
+.container .app img {
+  position: absolute;
+}
+
+.container .app :nth-child(2) {
+  margin-top: 125%;
+  margin-left: 20%;
+  width: 60%;
+}
+/*# sourceMappingURL=index.module.css.map */
