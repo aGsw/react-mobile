@@ -6,7 +6,10 @@ const getUserInfo = (schema, request) =>{
         },
         requestId: 'string',
         result:{
-            bankCardCount:4
+            bankCardCount:4,
+            userName:'郭世伟',
+            moblie:'17310241134',
+            login:true
         },
         status:1,
     }

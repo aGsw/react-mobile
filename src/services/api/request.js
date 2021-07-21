@@ -62,10 +62,9 @@ export default function request(url,options){
 
     return generateHeaders().then(headers =>{
         options.headers = {...headers,...options.headers}   
-
-        return fetch(url,options).then(checkStatus).then((response) => {
-            console.log('------',options)
-            return response
+        return fetch(url,options).then(checkStatus).then(async (response) => {
+            let result = await response.json()
+            return result.result 
         })
     })
 

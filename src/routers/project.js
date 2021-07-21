@@ -22,6 +22,12 @@ module.exports = [
         link:'/project/hyxj/quota',
         component: require('../pages/Project/hyxj/Quota').default,
         exact:true
+    },
+    {
+        name:'关注微信',
+        link:'/project/hyxj/followWx',
+        component: require('../pages/Project/hyxj/FollowWx').default,
+        exact:true
     }
 
 ]

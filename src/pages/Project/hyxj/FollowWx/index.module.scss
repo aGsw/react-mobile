@@ -1,0 +1,27 @@
+.container{
+    position: relative;
+    img{
+        width: 750px;
+    }
+        .mask{
+            position: absolute;
+            top: 0px;
+            width: 750px;
+            height: 100%;
+            .button1{
+                position: relative;
+                width: 48%;
+                height: 6%;
+                top:67%;
+                left: 26%;
+            }
+            .button2{
+                position: relative;
+                width: 28%;
+                height: 5%;
+                top:78%;
+                left: 60%;
+            }
+        }
+        
+}

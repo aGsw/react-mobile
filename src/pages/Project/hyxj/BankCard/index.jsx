@@ -1,5 +1,7 @@
+import React from 'react'
 import styles from './index.module.scss'
 import { Button } from 'antd-mobile'
+import withAuth from 'components/hoc/withAuth'
 
 const imgSrc = require('./images/无银行卡@2x.png').default
 
@@ -16,4 +18,4 @@ const BankCard = ()=>{
     )
 }
 
-export default BankCard
+export default withAuth(BankCard)
