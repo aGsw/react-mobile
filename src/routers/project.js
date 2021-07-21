@@ -18,14 +18,8 @@ module.exports = [
         exact:true
     },
     {
-        name:'我的额度',
-        link:'/project/hyxj/quota',
-        component: require('../pages/Project/hyxj/Quota').default,
-        exact:true
-    },
-    {
         name:'关注微信',
-        link:'/project/hyxj/followWx',
+        path:'/project/hyxj/followWx',
         component: require('../pages/Project/hyxj/FollowWx').default,
         exact:true
     }

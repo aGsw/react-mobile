@@ -1,16 +1,19 @@
 import styles from './index.module.scss'
 import copy from 'copy-to-clipboard';
 import { Toast } from 'antd-mobile'
+import { useState } from 'react';
+import { RequestTimeout } from 'http-errors';
 /**
  * 关注微信 / 下载图片 / APP 对接
  * @returns 
  */
-const WX = () =>{
+const Index = () =>{
+    const [show,setShow] = useState(false)
     /**
      * @function 下载二维码
      * 
      */
-    const saveImg = ()=>{
+    const dowloadImg = ()=>{
         let Url = require('./images/wx_code.png').default 
 		let triggerEvent = "touchstart"; //指定下载方式
 	    let blob=new Blob([''], {type:'application/octet-stream'});
@@ -33,19 +36,29 @@ const WX = () =>{
         // document.location.href = 'weixin://'
         
     }
+    const enlargeImg = ()=>{
+        setShow(!show)
+    }
     return(
         <div className={styles.container}>
             {/* 背景图 */}
-            <div>
-                <img src={require('./images/follow_wx@3x.png').default} alt="" />
+            <div className={styles.content}>
+                <img src={require('./images/follow_wx.png').default} alt="" />
+                <div className={styles.mask}>
+                    <div className={styles.enlarge} onClick={enlargeImg}></div>
+                    <div className={styles.button1} onClick={dowloadImg}></div>
+                    <div className={styles.button2} onClick={openWx}></div>
+                </div>
             </div>
-            {/* 点击区域 */}
-            <div className={styles.mask}>
-                <div className={styles.button1} onClick={saveImg}></div>
-                <div className={styles.button2}  onClick={openWx}></div>
-            </div>
+            {/* 放大二维码 */}
+            {
+                show?(
+                    <div className={styles.imgContent} onClick={enlargeImg}>
+                        <img src={require('./images/wx_code.png').default} alt="" />
+                    </div>
+                ):""}
         </div>
     )
 }
 
-export default WX
+export default Index

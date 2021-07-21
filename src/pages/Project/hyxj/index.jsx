@@ -9,10 +9,6 @@ const lists = [
         link:'/project/hyxj/loanReturnGuide'
     },
     {
-        name:'我的额度',
-        link:'/project/hyxj/quota'
-    },
-    {
         name:'关注微信',
         link:'/project/hyxj/followWx'
     }
